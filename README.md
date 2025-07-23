@@ -27,19 +27,7 @@ This is a full-stack chatbot application that uses [Ollama](https://ollama.com/)
 
 ## 📁 Project Structure
 
-ollama-chatbot/
-├── ollama-chatbot-backend/
-│ ├── routes/chat.js
-│ ├── models/Chat.js, Message.js
-│ ├── app.js
-│ └── package.json
-├── ollama-chatbot-frontend/
-│ ├── src/
-│ │ ├── components/ChatSidebar.jsx, ChatWindow.jsx
-│ │ ├── App.jsx, main.jsx
-│ │ └── services/api.js
-│ └── package.json
-├── README.md
+<pre> ollama-chatbot/ ├── ollama-chatbot-backend/ │ ├── routes/ │ │ └── chat.js │ ├── models/ │ │ ├── Chat.js │ │ └── Message.js │ ├── app.js │ └── package.json │ ├── ollama-chatbot-frontend/ │ ├── src/ │ │ ├── components/ │ │ │ ├── ChatSidebar.jsx │ │ │ └── ChatWindow.jsx │ │ ├── services/ │ │ │ └── api.js │ │ ├── App.jsx │ │ └── main.jsx │ └── package.json │ ├── README.md └── .gitignore </pre>
 
 
 ---
