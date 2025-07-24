@@ -32,3 +32,11 @@ export const sendMessage = async (chatId, content) => {
   if (!res.ok) throw new Error('Failed to send message')
   return res.json() 
 }
+
+export const deleteChat = async (chatId) => {
+  const res = await fetch(`${BASE_URL}/${chatId}`, {
+    method: 'DELETE'
+  })
+  if (!res.ok) throw new Error('Failed to delete chat')
+  return res.json()
+}

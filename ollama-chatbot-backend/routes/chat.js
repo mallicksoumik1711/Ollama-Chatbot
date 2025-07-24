@@ -97,6 +97,18 @@ router.get('/', async (req, res) => {
   }
 })
 
+// Delete a chat and its messages
+router.delete('/:chatId', async (req, res) => {
+  try {
+    const { chatId } = req.params
+    await Message.deleteMany({ chatId })
+    await Chat.findByIdAndDelete(chatId)
+    res.json({ message: 'Chat deleted successfully' })
+  } catch (err) {
+    console.error('Failed to delete chat:', err)
+    res.status(500).json({ error: 'Failed to delete chat' })
+  }
+})
 
 
 module.exports = router
