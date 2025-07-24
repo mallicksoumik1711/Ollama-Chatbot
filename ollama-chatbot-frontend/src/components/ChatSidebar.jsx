@@ -47,19 +47,6 @@ const ChatSidebar = () => {
                 New Chat
             </button>
 
-            {/* <ul className="space-y-2">
-                {chats.map(chat => (
-                    <li
-                        key={chat._id}
-                        className="p-3 bg-slate-700 rounded hover:bg-slate-600 cursor-pointer"
-                        onClick={() => navigate(`/chat/${chat._id}`)}
-                    >
-                        {chat.title || 'Untitled Chat'}
-
-                    </li>
-                ))}
-            </ul> */}
-
             {/* delete cchat icon delete if wrong */}
             <ul className="space-y-2">
                 {chats.map(chat => (
@@ -73,21 +60,6 @@ const ChatSidebar = () => {
                         >
                             {chat.title || 'Untitled Chat'}
                         </span>
-                        {/* <button
-                            className="ml-2 text-red-400 hover:text-red-600"
-                            onClick={async (e) => {
-                                e.stopPropagation()
-                                try {
-                                    await deleteChat(chat._id)
-                                    fetchChats()
-                                } catch (err) {
-                                    console.error('Failed to delete chat:', err)
-                                }
-                            }}
-                            title="Delete Chat"
-                        >
-                            <Trash/>
-                        </button> */}
                         <button
                             className="ml-2"
                             onClick={async (e) => {
