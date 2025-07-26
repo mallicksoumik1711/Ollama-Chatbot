@@ -53,7 +53,7 @@ const ChatWindow = () => {
       </div>
 
       {/* Messages */}
-      <div className="flex-1 p-6 overflow-y-auto space-y-4">
+      <div className="flex-1 p-6 overflow-y-auto space-y-4 sidebar-scroll">
         {messages.map((msg, idx) => (
           <div
             key={idx}
